@@ -6,3 +6,4 @@ Prerequisites:
 * SSH-Key on your workers that allow root to access as a user from master.
 * Allow your user to run commando with NOPASSWD on workers
 * NFS share that master and workers can access.
+* Run script as root
