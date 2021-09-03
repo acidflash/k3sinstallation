@@ -10,7 +10,6 @@ SPACE="XX" # Example 50Gi for 50Gig allocation
 NASPATH="/mnt/kuben" # Example /mnt/kuben
 
 echo "### Install K3S Master ###"
-dhclient ens192
 curl -sfL https://get.k3s.io | sh -s - server --no-deploy servicelb
 apt install -y nfs-common
 echo "### Install Agents ###"
