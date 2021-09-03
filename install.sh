@@ -75,4 +75,4 @@ echo "export KUBECONFIG=/etc/rancher/k3s/k3s.yaml" >> .bashrc
 sleep 20
 k3s kubectl get storageclasses
 PORTAINER_IP="$(k3s kubectl -n portainer get services portainer  --output jsonpath='{.status.loadBalancer.ingress[0].ip}')"
-echo $PORTAINER_IP
+echo "Access portainer on http://$PORTAINER_IP:9000"
