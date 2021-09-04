@@ -65,7 +65,7 @@ spec:
   targetNamespace: default
   set:
     nfs.server: $NASSERVER
-    nfs.path: $PATH
+    nfs.path: $NASPATH
     storageClass.name: nfs
 EOF
 kubectl apply -f /var/lib/rancher/k3s/server/manifests/nfs.yaml
